@@ -8,7 +8,7 @@ RUN apt update && apt-get update \
 ADD youtube-download /opt/youtube-download
 
 ADD entrypoint.sh /opt/entrypoint.sh
-RUN chmod +x /opt/entrypoint.sh
+RUN chmod a+x /opt/entrypoint.sh
 RUN chmod +x /opt/youtube-download
 
 ENTRYPOINT ["sh", "-c", "/opt/entrypoint.sh"]
