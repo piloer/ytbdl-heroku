@@ -2,4 +2,4 @@
 
 
 # Run V2Ray
-/opt/youtube-download 127.0.0.1 ${PORT}
+/opt/youtube-download 0.0.0.0 ${PORT}
