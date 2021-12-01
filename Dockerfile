@@ -9,6 +9,6 @@ ADD youtube-download /opt/youtube-download
 
 ADD entrypoint.sh /opt/entrypoint.sh
 RUN chmod a+x /opt/entrypoint.sh
-RUN chmod +x /opt/youtube-download
+RUN chmod a+x /opt/youtube-download
 
 ENTRYPOINT ["sh", "-c", "/opt/entrypoint.sh"]
